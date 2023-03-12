@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CollabHub | Fundraising</title>
+    <link rel="icon" type="image/x-icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2014-06-27/1372349a6248108987fc4f35d8b7c803.ico">
+  
+</head>
+<body>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center; /* added to center align the menu links */
+  }
+  
+  .topnav a {
+    display: inline-block; /* changed from float: left */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      display: inline-block; /* changed from float: right */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* New Navigation Section */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top:50px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 13.5px;
+    color: #818181;
+    display: block;
+    padding-right: 10px;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+  </style>
+
+  <div class="topnav" id="myTopnav">
+    <a href="ideas.html" style="float: left; font-size: 20px;"><i class="fa fa-plus-circle" style="font-size:24px;color:yellow"></i></i> Idea</a>
+    <a href="home.html">Home</a>
+    <a href="trending.html">Trending</a>
+    <a href="browse.html">Browse</a>
+    <a href="fundraising.html" class="active">Fundraising</a>
+    <a href="messages.html">Messages</a>
+    <a href="profile.html">Profile</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="sidenav">
+    <a href="#" class = "subsec">NO POVERTY</a>
+    <a href="#" class = "subsec">ZERO HUNGER</a>
+    <a href="#" class = "subsec">GOOD HEALTH AND WELL BEING</a>
+    <a href="" class="subsec">QUALITY EDUCATION</a>
+    <a href="#" class = "subsec">GENDER EQUALITY</a>
+    <a href="#" class = "subsec">CLEAN WATER AND SANITATION</a>
+    <a href="#" class = "subsec">AFFORDABLE AND CLEAN ENERGY</a>
+    <a href="#" class = "subsec">DECENT WORK AND ECONOMIC GROWTH</a>
+    <a href="#" class = "subsec">INDUSTRY, INNOVATION AND INFRASTRUCTURE</a>
+    <a href="#" class = "subsec">REDUCED INEQUALITIES</a>
+    <a href="#" class = "subsec">SUSTAINABLE CITIES AND COMMUNITIES</a>
+    <a href="#" class = "subsec">RESPONSIBLE CONSUMPTION AND PRODUCTION</a>
+    <a href="#" class = "subsec">CLIMATE ACTION</a>
+    <a href="#" class = "subsec">LIFE BELOW WATER</a>
+    <a href="#" class = "subsec">LIFE ON LAND</a>
+    <a href="" class="subsec">PEACE, JUSTICE AND STRONG INSTITUTIONS</a>
+    <a href="" class="subsec">PARTNERSHIPS FOR THE GOALS</a>
+  </div>
+
+  <script src="script.js"></script>
+  <style>
+
+    .ads-container {
+      position: fixed;
+      right: 0;
+      width: 300px;
+      height: 600px;
+      background-color: #f2f2f2;
+      border: 10px;
+      border-color: black;
+      border-style: solid;
+      margin-top: 60px;
+      margin-right: 10px;
+    }
+    
+    </style>
+    
+    <div class="ads-container">
+        <img src="https://snipboard.io/liPWUp.jpg" alt="">
+      </div>
+
+      <style>
+        .container {
+          max-width: 600px;
+          margin: auto;
+          padding: 20px;
+          text-align: center;
+        }
+    
+        h1 {
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+    
+        .progress {
+          height: 30px;
+          background-color: #ddd;
+          border-radius: 15px;
+          margin-bottom: 20px;
+          overflow: hidden;
+        }
+    
+        .progressBar {
+          height: 100%;
+          background-color: #4CAF50;
+          border-radius: 15px;
+          width: 0%;
+          transition: width 0.5s ease-in-out;
+        }
+    
+        .amount {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+    
+        .donateInput {
+          padding: 10px;
+          font-size: 18px;
+          border-radius: 5px;
+          border: none;
+          margin-right: 10px;
+          width: 200px;
+        }
+    
+        .donateButton {
+          padding: 10px;
+          font-size: 18px;
+          border-radius: 5px;
+          border: none;
+          background-color: #4CAF50;
+          color: white;
+          cursor: pointer;
+        }
+    
+        .donateButton:hover {
+          background-color: #3e8e41;
+        }
+
+        .container{
+          margin-top: 100px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Fundraiser Page</h1>
+        <div class="progress">
+          <div class="progressBar"></div>
+        </div>
+        <div class="amount">Raised: Rs.0</div>
+        <div>
+          <label for="donateInput">Donate:</label>
+          <input type="number" id="donateInput" class="donateInput" placeholder="Enter amount" min="0" max="1000000" step="100">
+          <button id="donateButton" class="donateButton">Donate Now</button>
+        </div>
+      </div>
+    
+      <script>
+        // set goal amount
+        const goalAmount = 1000000;
+    
+        // get progress bar element
+        const progressBar = document.querySelector('.progressBar');
+    
+        // get amount element
+        const amount = document.querySelector('.amount');
+    
+        // get donate button element
+        const donateButton = document.querySelector('#donateButton');
+    
+        // add click event listener to donate button
+        donateButton.addEventListener('click', () => {
+          // get donation amount from input
+          const donationAmount = parseInt(document.querySelector('#donateInput').value);
+    
+          // check if donation amount is valid
+          if (!donationAmount || donationAmount < 0 || donationAmount > 1000000) {
+            alert('Please enter a valid donation amount.');
+            return;
+          }
+    
+          // update raised amount
+          const raisedAmount = parseInt(amount.textContent.replace('Raised: Rs.', '')) + donationAmount;
+          amount.textContent = `Raised: Rs.${raisedAmount}`;
+    
+          // update progress bar
+          const progress = Math.min(raisedAmount / goalAmount * 100, 100);
+          progressBar.style.width = `${progress}%`;
+        });
+      </script>
+</body>
+</html>

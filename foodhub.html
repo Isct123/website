@@ -1,0 +1,333 @@
+<head>
+  <title>CollabHub | Idea</title>
+  <link rel="icon" type="image/x-icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2014-06-27/1372349a6248108987fc4f35d8b7c803.ico">
+</head> 
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      /* style for the idea div */
+      .idea {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      /* style for the title of the idea */
+      .idea-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      /* style for the tags of the idea */
+      .idea-tags {
+        margin-top: 5px;
+      }
+
+      .tag {
+        display: inline-block;
+        background-color: #eee;
+        color: #333;
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 2px 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+
+      .tag-sdg{
+        background-color: rgb(189, 189, 34);
+        color: white;
+      }
+
+      .tag-coding {
+        background-color: #ff5b5b;
+        color: #fff;
+      }
+
+      .tag-drawing {
+        background-color: #6495ed;
+        color: #fff;
+      }
+
+      .tag-designing {
+        background-color: #da70d6;
+        color: #fff;
+      }
+
+      .tag-funding {
+        background-color: #9acd32;
+        color: #333;
+      }
+
+      .tag-advice {
+        background-color: #ffa07a;
+        color: #333;
+      }
+
+      .tag-graphics-design {
+        background-color: #b19cd9;
+        color: #fff;
+      }
+
+      .tag-promotion {
+        background-color: #20b2aa;
+        color: #fff;
+      }
+
+      /* style for the assistance needed section of the idea */
+      .idea-assistance {
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+      .idea-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .idea-actions button {
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+
+      .idea-actions button:focus {
+        outline: none;
+      }
+
+      .idea-actions button:hover {
+        text-decoration: underline;
+      }
+
+      .like-btn {
+        color: green;
+      }
+
+      .dislike-btn {
+        color: red;
+      }
+
+      .volunteer-btn {
+        color: blue;
+      }
+
+      i{
+        font-size: 3;
+      }
+      .idea{
+        margin-left: 200px;
+        width: 80%;
+        float: left;
+      }
+      .ads-container{
+        width: 20%;
+        float: right;
+      }
+
+      .idea{
+        transform: scale(1.1);
+        margin-left: 100px;
+        margin-top: 50px;
+        border: none;
+      }
+      .likeBtn {
+  background-color: white;
+  color: blue;
+}
+
+.dislikeBtn {
+  background-color: white;
+  color: red;
+}
+
+.commentBox {
+  height: 50px;
+  width: 300px;
+}
+
+.commentBtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.commentSection {
+  margin-top: 10px;
+}
+
+.popup {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: white;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			z-index: 1;
+			max-width: 500px;
+			width: 90%;
+		}
+
+		.popup label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		.popup textarea {
+			display: block;
+			width: 100%;
+			height: 150px;
+			margin-bottom: 10px;
+			resize: vertical;
+		}
+
+		.popup button {
+			display: block;
+			margin: 20px auto 0;
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="idea">
+    <div class="idea-title">FoodHub: Order food home</div>
+    <div class="basicdesc">Gives you food that is packaged with only biodegradable materials.</div>
+    
+    <div class="idea-tags">
+      <span class="tag tag-coding">Coding</span>
+      <span class="tag tag-sdg">sdg1</span>
+      <span class="tag tag-sdg">sdg2</span>
+      <span class="tag tag-sdg">sdg12</span>
+    </div>
+    <br>
+    <div class="detaileddesc">The food industry has come under scrutiny in recent years due to its impact on the environment, as well as concerns about the nutritional value of many products. In response to these concerns, a new generation of food companies has emerged, focused on creating healthy, sustainable, and ethical food options. One such company is a food company that produces good healthy food in packaging that is good for the environment.
+
+        This food company's products are made from high-quality, natural ingredients that are sourced locally where possible. They offer a wide range of options, including vegetarian and vegan meals, as well as gluten-free and low-carb options. All their products are free from artificial preservatives, additives, and other harmful ingredients, making them a healthy option for anyone looking for a convenient and nutritious meal.
+        
+        In addition to providing healthy food options, this food company is also committed to sustainability. They use environmentally-friendly packaging made from materials such as recycled paper, biodegradable plastics, and reusable containers. Their packaging is designed to reduce waste and minimize the company's carbon footprint. They also work with suppliers who share their commitment to sustainability, ensuring that their ingredients are sourced in an ethical and responsible manner.
+        
+        The company's commitment to sustainability extends beyond their packaging and ingredients. They have also implemented practices to reduce waste, such as using energy-efficient appliances and recycling their cooking oil. They donate any leftover food to local charities, reducing food waste and supporting the community.
+        
+        Customers of this food company appreciate the high-quality, healthy food and the company's commitment to sustainability. They feel good knowing that they are making a positive impact on the environment by choosing products that are packaged in an eco-friendly way. Many customers also appreciate the convenience of having healthy, pre-made meals that they can grab on-the-go.
+        
+        In conclusion, this food company's commitment to creating healthy, sustainable, and ethical food options is a positive step forward for the food industry. By providing good healthy food in packaging that is good for the environment, they are not only meeting the needs of their customers but also contributing to a healthier and more sustainable future for everyone.</div>
+    <div class="idea-assistance">We require someone who can code a website that meets these requirements using HTML CSS JS.</div>
+    <br>
+    <div class="idea-feedback">
+        <div>
+            <button id="likeBtn" class="likeBtn ">Like 👍</button>
+            <button id="dislikeBtn" class="dislikeBtn">Dislike 👎</button>
+          </div>
+          <div>
+            <button style="margin-top: 10px; border-width: 3px; margin-bottom: 10px; border-radius: 3px; background-color: rgb(169, 245, 169); " onclick="showPopup()">Volunteer 🤝</button>
+          </div>
+          <div>
+            <textarea id="commentBox" class="commentBox" placeholder="Add a comment..."></textarea>
+            <button id="commentBtn" class="commentBtn">Comment</button>
+          </div>
+          <div id="commentSection" class="commentSection">
+            <!-- existing comments will be displayed here -->
+          </div>
+        </div>
+      </div>
+      
+  </div>
+  
+</div>
+
+<script>
+    // Get elements from DOM
+const likeBtn = document.getElementById("likeBtn");
+const dislikeBtn = document.getElementById("dislikeBtn");
+const commentBox = document.getElementById("commentBox");
+const commentBtn = document.getElementById("commentBtn");
+const commentSection = document.getElementById("commentSection");
+
+// Set initial state of buttons
+let likeClicked = false;
+let dislikeClicked = false;
+
+// Event listeners for like and dislike buttons
+likeBtn.addEventListener("click", () => {
+  if (!likeClicked) {
+    likeBtn.style.backgroundColor = "blue";
+    likeBtn.style.color = "white";
+    likeClicked = true;
+    if (dislikeClicked) {
+      dislikeBtn.style.backgroundColor = "white";
+      dislikeBtn.style.color = "red";
+      dislikeClicked = false;
+    }
+  } else {
+    likeBtn.style.backgroundColor = "white";
+    likeBtn.style.color = "blue";
+    likeClicked = false;
+  }
+});
+
+dislikeBtn.addEventListener("click", () => {
+  if (!dislikeClicked) {
+    dislikeBtn.style.backgroundColor = "red";
+    dislikeBtn.style.color = "white";
+    dislikeClicked = true;
+    if (likeClicked) {
+      likeBtn.style.backgroundColor = "white";
+      likeBtn.style.color = "blue";
+      likeClicked = false;
+    }
+  } else {
+    dislikeBtn.style.backgroundColor = "white";
+    dislikeBtn.style.color = "red";
+    dislikeClicked = false;
+  }
+});
+
+// Event listener for comment button
+commentBtn.addEventListener("click", () => {
+  const commentText = commentBox.value.trim();
+  if (commentText) {
+    const commentDiv = document.createElement("div");
+    commentDiv.innerText = commentText;
+    commentSection.appendChild(commentDiv);
+    commentBox.value = "";
+  }
+});
+
+</script>
+<script>
+    function showPopup() {
+        document.getElementById("popup").style.display = "block";
+    }
+
+    function submitForm() {
+        alert("Thank you for volunteering! We have received your response.");
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+<div class="popup" id="popup">
+    <label for="value">How will you bring value to this idea?</label>
+    <textarea id="value"></textarea>
+    <button onclick="submitForm()">Submit</button>
+</div>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>CollabHub | Browse</title>
+  <link rel="icon" type="image/x-icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2014-06-27/1372349a6248108987fc4f35d8b7c803.ico">
+</head>
+<body>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  /* Add other styles as needed */
+}
+
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center; /* added to center align the menu links */
+    position: sticky;
+  }
+  
+  .topnav a {
+    display: inline-block; /* changed from float: left */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      display: inline-block; /* changed from float: right */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* New Navigation Section */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top:50px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 13.5px;
+    color: #818181;
+    display: block;
+    padding-right: 10px;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* New horizontal navigation section */
+  .hori-nav {
+    overflow: hidden;
+    background-color: #ddd;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .hori-nav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .hori-nav a:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  .hori-nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .horizontalnav{
+    background-color: #669999;
+    
+  }
+
+  .horizontalnav a{
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+  </style>
+
+  <div class="topnav" id="myTopnav">
+    <a href="ideas.html" style="float: left; font-size: 20px;"><i class="fa fa-plus-circle" style="font-size:24px;color:yellow"></i></i> Idea</a>
+    <a href="home.html" >Home</a>
+    <a href="trending.html">Trending</a>
+    <a href="browse.html"class="active">Browse</a>
+    <a href="fundraising.html">Fundraising</a>
+    <a href="messages.html">Messages</a>
+    <a href="profile.html">Profile</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="sidenav">
+    <a href="#" class = "subsec">NO POVERTY</a>
+    <a href="#" class = "subsec">ZERO HUNGER</a>
+    <a href="#" class = "subsec">GOOD HEALTH AND WELL BEING</a>
+    <a href="" class="subsec">QUALITY EDUCATION</a>
+    <a href="#" class = "subsec">GENDER EQUALITY</a>
+    <a href="#" class = "subsec">CLEAN WATER AND SANITATION</a>
+    <a href="#" class = "subsec">AFFORDABLE AND CLEAN ENERGY</a>
+    <a href="#" class = "subsec">DECENT WORK AND ECONOMIC GROWTH</a>
+    <a href="#" class = "subsec">INDUSTRY, INNOVATION AND INFRASTRUCTURE</a>
+    <a href="#" class = "subsec">REDUCED INEQUALITIES</a>
+    <a href="#" class = "subsec">SUSTAINABLE CITIES AND COMMUNITIES</a>
+    <a href="#" class = "subsec">RESPONSIBLE CONSUMPTION AND PRODUCTION</a>
+    <a href="#" class = "subsec">CLIMATE ACTION</a>
+    <a href="#" class = "subsec">LIFE BELOW WATER</a>
+    <a href="#" class = "subsec">LIFE ON LAND</a>
+    <a href="" class="subsec">PEACE, JUSTICE AND STRONG INSTITUTIONS</a>
+    <a href="" class="subsec">PARTNERSHIPS FOR THE GOALS</a>
+  </div>
+  <style>
+
+    .ads-container {
+      position: fixed;
+      right: 0;
+      width: 300px;
+      height: 600px;
+      background-color: #f2f2f2;
+      border: 10px;
+      border-color: black;
+      border-style: solid;
+      margin-top: 0px;
+      margin-right: 10px;
+    }
+    
+    </style>
+    
+    <style>
+      /* set font family to Roboto */
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      /* style for the idea div */
+      .idea {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      /* style for the title of the idea */
+      .idea-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      /* style for the tags of the idea */
+      .idea-tags {
+        margin-top: 5px;
+      }
+
+      .tag {
+        display: inline-block;
+        background-color: #eee;
+        color: #333;
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 2px 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+
+      .tag-sdg{
+        background-color: rgb(189, 189, 34);
+        color: white;
+      }
+
+      .tag-coding {
+        background-color: #ff5b5b;
+        color: #fff;
+      }
+
+      .tag-drawing {
+        background-color: #6495ed;
+        color: #fff;
+      }
+
+      .tag-designing {
+        background-color: #da70d6;
+        color: #fff;
+      }
+
+      .tag-funding {
+        background-color: #9acd32;
+        color: #333;
+      }
+
+      .tag-advice {
+        background-color: #ffa07a;
+        color: #333;
+      }
+
+      .tag-graphics-design {
+        background-color: #b19cd9;
+        color: #fff;
+      }
+
+      .tag-promotion {
+        background-color: #20b2aa;
+        color: #fff;
+      }
+
+      /* style for the assistance needed section of the idea */
+      .idea-assistance {
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+      .idea-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .idea-actions button {
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+
+      .idea-actions button:focus {
+        outline: none;
+      }
+
+      .idea-actions button:hover {
+        text-decoration: underline;
+      }
+
+      .like-btn {
+        color: green;
+      }
+
+      .dislike-btn {
+        color: red;
+      }
+
+      .volunteer-btn {
+        color: blue;
+      }
+
+      i{
+        font-size: 3;
+      }
+      .idea{
+        margin-left: 200px;
+        width: 80%;
+        float: left;
+      }
+      .ads-container{
+        width: 20%;
+        float: right;
+      }
+      select {
+			display: block;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+      margin-left: 500px;
+			font-family: "Roboto", sans-serif;
+		}
+    #search_button{
+      border-radius: 2px;
+    }
+
+    #search_button:hover{
+      opacity: 0.6;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    </style>
+  </head>
+  <body>
+    <select style="margin-left: 200px;" id = "sdg_choose">
+    <optgroup label="Filter by:">
+      <option value="All">All</option>
+      <option value="SDG1">SDG1: No Poverty</option>
+      <option value="SDG2">SDG2: Zero Hunger</option>
+      <option value="SDG3">SDG3: Good Health and Well-being</option>
+      <option value="SDG4">SDG4: Quality Education</option>
+      <option value="SDG5">SDG5: Gender Equality</option>
+      <option value="SDG6">SDG6: Clean Water and Sanitation</option>
+      <option value="SDG7">SDG7: Affordable and Clean Energy</option>
+      <option value="SDG8">SDG8: Decent Work and Economic Growth</option>
+      <option value="SDG9">SDG9: Industry, Innovation and Infrastructure</option>
+      <option value="SDG10">SDG10: Reduced Inequalities</option>
+      <option value="SDG11">SDG11: Sustainable Cities and Communities</option>
+      <option value="SDG12">SDG12: Responsible Consumption and Production</option>
+      <option value="SDG13">SDG13: Climate Action</option>
+      <option value="SDG14">SDG14: Life Below Water</option>
+      <option value="SDG15">SDG15: Life on Land</option>
+      <option value="SDG16">SDG16: Peace, Justice and Strong Institutions</option>
+      <option value="SDG17">SDG17: Partnerships for the Goals</option>
+    </select>
+    
+    <select style="margin-left: 200px;" id="assist_place"> 
+      <optgroup label="Assistance">
+        <option value="all">All</option> 
+        <option value="coding">Coding</option>
+        <option value="drawing">Drawing</option>
+        <option value="designing">Designing</option>
+        <option value="funding">Funding</option>
+        <option value="advice">Advice</option>
+        <option value="graphics-design">Graphics Design</option>
+        <option value="promotion">Promotion</option>
+      </select>
+      <button style="margin-left: 220px; background-color: greenyellow; font-size: 20px; margin-top: 5px; margin-bottom: 5px;" id = "search_button">Search</button>
+    <!-- sample idea div -->
+        <div class="idea"  onclick="window.open('foodhub.html')">
+            <div class="idea-title" >FoodHub: Order food home</div>
+            <div class="basicdesc">Gives you food that is packaged with only biodegradable materials.</div>
+            <div class="idea-tags">
+              <span class="tag tag-coding">Coding</span>
+              <span class="tag tag-sdg">SDG1</span>
+              <span class="tag tag-sdg">SDG2</span>
+              <span class="tag tag-sdg">SDG12</span>
+            </div>
+            <div class="idea-assistance">We require someone who can code a website that meets these requirements using HTML CSS JS.</div>
+            <br>
+            <div class="idea-feedback">
+              You can:
+                <span class="feedback-button like-button"><i class="fa fa-thumbs-up"> </i></span>
+                <span class="feedback-button dislike-button"><i class="fa fa-thumbs-down"> </i></span>
+                <span class="feedback-button comment-button" id="idea_1"><i class="fa fa-comment"> </i></span>
+                <span class="feedback-button volunteer-button"><i class="fa fa-handshake-o"> </i></span>
+                <div class="comment-form" style="display: none;" id = "reply_1">
+                  <form>
+                    <div>
+                        
+                    </div>
+                    <textarea></textarea>
+                    <button type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+              
+          </div>
+          
+    </div>
+    <div class="idea" onclick="window.open('waterconservation.html')">
+        <div class="idea-title">Water Conservation Awareness Campaign</div>
+        <div class="basicdesc">A social media campaign that raises awareness about the importance of water conservation and provides practical tips for reducing water waste at home and in public spaces.</div>
+        <div class="idea-tags">
+          <span class="tag tag-sdg">SDG6</span>
+          <span class="tag tag-sdg">SDG12</span>
+          <span class="tag tag-promotion">Promotion</span>
+          <span class="tag tag-advice">Advise</span>
+        </div>
+        <div class="idea-assistance">We require a team of social media experts, content creators, and water conservation advocates to design and execute the campaign.</div>
+        <br>
+        <div class="idea-feedback">
+          You can:
+          <span class="feedback-button like-button"><i class="fa fa-thumbs-up"> </i></span>
+          <span class="feedback-button dislike-button"><i class="fa fa-thumbs-down"> </i></span>
+          <span class="feedback-button comment-button" id="idea_2"><i class="fa fa-comment"> </i></span>
+          <span class="feedback-button volunteer-button"><i class="fa fa-handshake-o"> </i></span>
+          
+        </form>
+      </div>
+      
+    </div>
+</div>
+</div>
+<div class="idea" onclick="window.open('renewableenergytracker.html')">
+    <div class="idea-title">Renewable Energy Tracker</div>
+    <div class="basicdesc">An app that tracks your daily renewable energy usage, calculates your carbon footprint, and suggests ways to reduce it.</div>
+    <div class="idea-tags">
+      <span class="tag tag-coding">Coding</span>
+      <span class="tag tag-sdg">SDG7</span>
+      <span class="tag tag-sdg">SDG12</span>
+      <span class="tag tag-funding">Funding</span>
+    </div>
+    <div class="idea-assistance">We require someone who can code a mobile app that integrates with renewable energy sources and offers real-time tracking of energy consumption.</div>
+    <br>
+    <div class="idea-feedback">
+      <span class="feedback-button like-button"><i class="fa fa-thumbs-up"> </i></span>
+      <span class="feedback-button dislike-button"><i class="fa fa-thumbs-down"> </i></span>
+      <span class="feedback-button comment-button" id="idea_3"><i class="fa fa-comment"> </i></span>
+      <span class="feedback-button volunteer-button"><i class="fa fa-handshake-o"> </i></span>
+      <div class="comment-form" style="display: none;" id = "reply_3">
+  </div>
+  </div>
+</div>
+  <div class="idea" onclick="window.open('smartrecyclingbin.html')">
+    <div class="idea-title">Smart Recycling Bins</div>
+    <div class="basicdesc">A smart recycling bin that uses sensors to sort recyclable materials automatically.</div>
+    <div class="idea-tags">
+      <span class="tag tag-coding">Coding</span>
+      <span class="tag tag-sdg">SDG12</span>
+      <span class="tag tag-sdg">SDG13</span>
+      <span class="tag tag-funding">Funding</span>
+      <span class="tag tag-designing">Designing</span>
+    </div>
+    <div class="idea-assistance">We require someone who has the expertise in designing and coding the smart recycling bin.</div>
+    <br>
+    <div class="idea-feedback">
+      <span class="feedback-button like-button"><i class="fa fa-thumbs-up"> </i></span>
+      <span class="feedback-button dislike-button"><i class="fa fa-thumbs-down"> </i></span>
+      <span class="feedback-button comment-button" id="idea_3"><i class="fa fa-comment"> </i></span>
+      <span class="feedback-button volunteer-button"><i class="fa fa-handshake-o"> </i></span>
+      <div class="comment-form" style="display: none;" id = "reply_3">
+  </div>
+  </div>
+</div>
+
+
+  <!--New idea-->
+  <div class="idea" onclick="window.open('communitygardens.html')">
+    <div class="idea-title">Community Gardens</div>
+    <div class="basicdesc">Establishing community gardens to promote sustainable agriculture and provide fresh produce.</div>
+    <div class="idea-tags">
+      <span class="tag tag-designing">Designing</span>
+      <span class="tag tag-sdg">SDG2</span>
+      <span class="tag tag-sdg">SDG12</span>
+      <span class="tag tag-funding">Funding</span>
+      <span class="tag tag-promotion">Promoting</span>
+      <span class="tag tag-advice">Advice</span>
+
+    </div>
+    <div class="idea-assistance">We require someone who can spread awareness and promote our idea.</div>
+    <br>
+    <div class="idea-feedback">
+      <span class="feedback-button like-button"><i class="fa fa-thumbs-up"> </i></span>
+      <span class="feedback-button dislike-button"><i class="fa fa-thumbs-down"> </i></span>
+      <span class="feedback-button comment-button" id="idea_3"><i class="fa fa-comment"> </i></span>
+      <span class="feedback-button volunteer-button"><i class="fa fa-handshake-o"> </i></span>
+      <div class="comment-form" style="display: none;" id = "reply_3">
+  </div>
+  </div>
+  </div>
+      
+  </body>
+
+</html>
+      <div style="clear:both;"></div>
+  <script src="script.js"></script>
+  <script>
+    var b = document.getElementById("search_button");
+    b.addEventListener("click", function(){
+      var sdgValue = document.getElementById('sdg_choose').selectedOptions[0].value;
+      var tagvalue = document.getElementById('assist_place').selectedOptions[0].value;
+      var a = document.getElementsByClassName('idea');
+      if (tagvalue != 'all' && tagvalue!='All'){
+        
+      for(var i = 0; i<a.length; i++){
+        a[i].style.display = 'none';
+        let x = a[i].children[2].children;
+        for (var z = 0; z<x.length; z++){
+          var c = x[z].classList;
+            for (var b = 0; b<c.length; b++){
+              if (c[b].includes('tag-'+tagvalue)){
+                a[i].style.display = 'block';
+              }
+            }
+        }
+      }
+      }
+      else{
+        for(var i = 0; i<a.length; i++){
+          a[i].style.display = 'block';
+      }}
+
+      
+      
+    })
+  </script>
+</body>
+
+</html>

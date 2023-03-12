@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CollabHub | Ideas</title>
+    <link rel="icon" type="image/x-icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2014-06-27/1372349a6248108987fc4f35d8b7c803.ico">
+  
+</head>
+<body>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center; /* added to center align the menu links */
+  }
+  
+  .topnav a {
+    display: inline-block; /* changed from float: left */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      display: inline-block; /* changed from float: right */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* New Navigation Section */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top:50px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 13.5px;
+    color: #818181;
+    display: block;
+    padding-right: 10px;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.ads-container {
+  position: fixed;
+  right: 0;
+  width: 300px;
+  height: 600px;
+  background-color: #f2f2f2;
+  border: 10px;
+  border-color: black;
+  border-style: solid;
+  margin-top: 60px;
+  margin-right: 10px;
+}
+
+.main{
+    border-width: 10px;
+    border-color:  black;
+    border-style: solid;
+    height: 100%;
+    width: 80%;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+
+  </style>
+
+  <div class="topnav" id="myTopnav">
+    <a href="ideas.html" style="float: left; font-size: 20px;"><i class="fa fa-plus-circle" style="font-size:24px;color:yellow"></i></i> Idea</a>
+    <a href="home.html" >Home</a>
+    <a href="trending.html">Trending</a>
+    <a href="browse.html">Browse</a>
+    <a href="fundraising.html">Fundraising</a>
+    <a href="messages.html">Messages</a>
+    <a href="profile.html">Profile</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="sidenav">
+    <a href="#" class = "subsec">NO POVERTY</a>
+    <a href="#" class = "subsec">ZERO HUNGER</a>
+    <a href="#" class = "subsec">GOOD HEALTH AND WELL BEING</a>
+    <a href="" class="subsec">QUALITY EDUCATION</a>
+    <a href="#" class = "subsec">GENDER EQUALITY</a>
+    <a href="#" class = "subsec">CLEAN WATER AND SANITATION</a>
+    <a href="#" class = "subsec">AFFORDABLE AND CLEAN ENERGY</a>
+    <a href="#" class = "subsec">DECENT WORK AND ECONOMIC GROWTH</a>
+    <a href="#" class = "subsec">INDUSTRY, INNOVATION AND INFRASTRUCTURE</a>
+    <a href="#" class = "subsec">REDUCED INEQUALITIES</a>
+    <a href="#" class = "subsec">SUSTAINABLE CITIES AND COMMUNITIES</a>
+    <a href="#" class = "subsec">RESPONSIBLE CONSUMPTION AND PRODUCTION</a>
+    <a href="#" class = "subsec">CLIMATE ACTION</a>
+    <a href="#" class = "subsec">LIFE BELOW WATER</a>
+    <a href="#" class = "subsec">LIFE ON LAND</a>
+    <a href="" class="subsec">PEACE, JUSTICE AND STRONG INSTITUTIONS</a>
+    <a href="" class="subsec">PARTNERSHIPS FOR THE GOALS</a>
+  </div>
+  <!DOCTYPE html>
+<html>
+<head>
+	<title>Form Example</title>
+	<style>
+		body {
+			font-family: "Roboto", sans-serif;
+		}
+
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 5px #ccc;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"],
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			resize: vertical;
+			font-family: "Roboto", sans-serif;
+		}
+
+		select {
+			display: block;
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			font-family: "Roboto", sans-serif;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form style="margin-top: 100px;">
+	  <label for="title">Title of the idea (less than 20 characters):</label>
+	  <input type="text" id="title" name="title" maxlength="20" required>
+
+	  <label for="basic-description">Basic Description of the idea (less than 300 characters):</label>
+	  <textarea id="basic-description" name="basic-description" rows="2" cols="30" maxlength="300" required></textarea>
+
+	  <label for="in-depth-description">In depth description of the idea:</label>
+	  <textarea id="in-depth-description" name="in-depth-description" rows="5" cols="30" required></textarea>
+
+	  <label for="assistance">Where I need assistance?</label>
+	  <input type="text" id="assistance" name="assistance" required>
+
+	  <label for="tag" >Select tags that best correlate with your idea: (Ctrl + Click to select more than 1)</label>
+	  <select id="tag" name="tag" multiple size = "10">
+        <optgroup label="Sustainable Development Goals">
+          <option value="SDG 1">No Poverty</option>
+          <option value="SDG 2">Zero Hunger</option>
+          <option value="SDG 3">Good Health and Well-being</option>
+          <option value="SDG 4">Quality Education</option>
+          <option value="SDG 5">Gender Equality</option>
+          <option value="SDG 6">Clean Water and Sanitation</option>
+          <option value="SDG 7">Affordable and Clean Energy</option>
+          <option value="SDG 8">Decent Work and Economic Growth</option>
+          <option value="SDG 9">Industry, Innovation and Infrastructure</option>
+          <option value="SDG 10">Reduced Inequalities</option>
+          <option value="SDG 11">Sustainable Cities and Communities</option>
+          <option value="SDG 12">Responsible Consumption and Production</option>
+          <option value="SDG 13">Climate Action</option>
+          <option value="SDG 14">Life Below Water</option>
+          <option value="SDG 15">Life on Land</option>
+          <option value="SDG 16">Peace, Justice and Strong Institutions</option>
+          <option value="SDG 17">Partnerships for the Goals</option>
+        </optgroup>
+        <optgroup label="Where I need assistance">
+          <option value="coding">Coding</option>
+          <option value="drawing">Drawing</option>
+          <option value="designing">Designing</option>
+          <option value="funding">Funding</option>
+          <option value="advice">Advice</option>
+          <option value="graphics design">Graphics Design</option>
+          <option value="promotion">Promotion</option>
+        </optgroup>
+      </select>
+      
+
+	  <input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

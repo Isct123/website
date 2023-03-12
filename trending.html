@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <title>CollabHub | Trending</title>
+    <link rel="icon" type="image/x-icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2014-06-27/1372349a6248108987fc4f35d8b7c803.ico">
+  </head>
+</head>
+<body>
+  <h2 style="margin-top: 60px; margin-left: 210px;">Currently trending on our website with more than 10k likes! 🔥</h2>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center; /* added to center align the menu links */
+  }
+  
+  .topnav a {
+    display: inline-block; /* changed from float: left */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      display: inline-block; /* changed from float: right */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* New Navigation Section */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top:50px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 13.5px;
+    color: #818181;
+    display: block;
+    padding-right: 10px;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      /* style for the idea div */
+      .idea {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      /* style for the title of the idea */
+      .idea-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      /* style for the tags of the idea */
+      .idea-tags {
+        margin-top: 5px;
+      }
+
+      .tag {
+        display: inline-block;
+        background-color: #eee;
+        color: #333;
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 2px 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+
+      .tag-sdg{
+        background-color: rgb(189, 189, 34);
+        color: white;
+      }
+
+      .tag-coding {
+        background-color: #ff5b5b;
+        color: #fff;
+      }
+
+      .tag-drawing {
+        background-color: #6495ed;
+        color: #fff;
+      }
+
+      .tag-designing {
+        background-color: #da70d6;
+        color: #fff;
+      }
+
+      .tag-funding {
+        background-color: #9acd32;
+        color: #333;
+      }
+
+      .tag-advice {
+        background-color: #ffa07a;
+        color: #333;
+      }
+
+      .tag-graphics-design {
+        background-color: #b19cd9;
+        color: #fff;
+      }
+
+      .tag-promotion {
+        background-color: #20b2aa;
+        color: #fff;
+      }
+
+      /* style for the assistance needed section of the idea */
+      .idea-assistance {
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+      .idea-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .idea-actions button {
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+
+      .idea-actions button:focus {
+        outline: none;
+      }
+
+      .idea-actions button:hover {
+        text-decoration: underline;
+      }
+
+      .like-btn {
+        color: green;
+      }
+
+      .dislike-btn {
+        color: red;
+      }
+
+      .volunteer-btn {
+        color: blue;
+      }
+
+      i{
+        font-size: 3;
+      }
+      .idea{
+        margin-left: 210px;
+        
+        width: 60%;
+        float: left;
+      }
+      .ads-container{
+        width: 20%;
+        float: right;
+      }
+      select {
+			display: block;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+      margin-left: 500px;
+			font-family: "Roboto", sans-serif;
+		}
+    #search_button{
+      border-radius: 2px;
+    }
+
+    #search_button:hover{
+      opacity: 0.6;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+  </style>
+
+  <div class="topnav" id="myTopnav">
+    <a href="ideas.html" style="float: left; font-size: 20px;"><i class="fa fa-plus-circle" style="font-size:24px;color:yellow"></i></i> Idea</a>
+    <a href="home.html" >Home</a>
+    <a href="trending.html" class="active">Trending</a>
+    <a href="browse.html">Browse</a>
+    <a href="fundraising.html">Fundraising</a>
+    <a href="messages.html">Messages</a>
+    <a href="profile.html">Profile</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="sidenav">
+    <a href="#" class = "subsec">NO POVERTY</a>
+    <a href="#" class = "subsec">ZERO HUNGER</a>
+    <a href="#" class = "subsec">GOOD HEALTH AND WELL BEING</a>
+    <a href="" class="subsec">QUALITY EDUCATION</a>
+    <a href="#" class = "subsec">GENDER EQUALITY</a>
+    <a href="#" class = "subsec">CLEAN WATER AND SANITATION</a>
+    <a href="#" class = "subsec">AFFORDABLE AND CLEAN ENERGY</a>
+    <a href="#" class = "subsec">DECENT WORK AND ECONOMIC GROWTH</a>
+    <a href="#" class = "subsec">INDUSTRY, INNOVATION AND INFRASTRUCTURE</a>
+    <a href="#" class = "subsec">REDUCED INEQUALITIES</a>
+    <a href="#" class = "subsec">SUSTAINABLE CITIES AND COMMUNITIES</a>
+    <a href="#" class = "subsec">RESPONSIBLE CONSUMPTION AND PRODUCTION</a>
+    <a href="#" class = "subsec">CLIMATE ACTION</a>
+    <a href="#" class = "subsec">LIFE BELOW WATER</a>
+    <a href="#" class = "subsec">LIFE ON LAND</a>
+    <a href="" class="subsec">PEACE, JUSTICE AND STRONG INSTITUTIONS</a>
+    <a href="" class="subsec">PARTNERSHIPS FOR THE GOALS</a>
+
+    
+  </div>
+
+  <div class="idea" onclick="window.open('smartrecyclingbin.html')" style="margin-top: 10px;">
+    <div class="idea-title">Smart Recycling Bins</div>
+    <div class="basicdesc">A smart recycling bin that uses sensors to sort recyclable materials automatically.</div>
+    <div class="idea-tags">
+      <span class="tag tag-coding">Coding</span>
+      <span class="tag tag-sdg">SDG12</span>
+      <span class="tag tag-sdg">SDG13</span>
+      <span class="tag tag-funding">Funding</span>
+      <span class="tag tag-designing">Designing</span>
+    </div>
+    <div class="idea-assistance">We require someone who has the expertise in designing and coding the smart recycling bin.</div>
+    <br>
+    <div class="idea-feedback">
+      <span class="feedback-button like-button"><i class="fa fa-thumbs-up"> </i></span>
+      <span class="feedback-button dislike-button"><i class="fa fa-thumbs-down"> </i></span>
+      <span class="feedback-button comment-button" id="idea_3"><i class="fa fa-comment"> </i></span>
+      <span class="feedback-button volunteer-button"><i class="fa fa-handshake-o"> </i></span>
+      <div class="comment-form" style="display: none;" id = "reply_3">
+  </div>
+  </div>
+</div>
+
+
+  <!--New idea-->
+  <div class="idea" onclick="window.open('communitygardens.html')">
+    <div class="idea-title">Community Gardens</div>
+    <div class="basicdesc">Establishing community gardens to promote sustainable agriculture and provide fresh produce.</div>
+    <div class="idea-tags">
+      <span class="tag tag-designing">Designing</span>
+      <span class="tag tag-sdg">SDG2</span>
+      <span class="tag tag-sdg">SDG12</span>
+      <span class="tag tag-funding">Funding</span>
+      <span class="tag tag-promotion">Promoting</span>
+      <span class="tag tag-advice">Advice</span>
+
+    </div>
+    <div class="idea-assistance">We require someone who can spread awareness and promote our idea.</div>
+    <br>
+    <div class="idea-feedback">
+      <span class="feedback-button like-button"><i class="fa fa-thumbs-up"> </i></span>
+      <span class="feedback-button dislike-button"><i class="fa fa-thumbs-down"> </i></span>
+      <span class="feedback-button comment-button" id="idea_3"><i class="fa fa-comment"> </i></span>
+      <span class="feedback-button volunteer-button"><i class="fa fa-handshake-o"> </i></span>
+      <div class="comment-form" style="display: none;" id = "reply_3">
+  </div>
+  </div>
+  </div>
+  <!--New idea-->
+<div class="idea" onclick="window.open('reusablestraws.html')">
+  <div class="idea-title">Reusable Straws</div>
+  <div class="basicdesc">Promoting the use of reusable straws to reduce single-use plastic waste.</div>
+  <div class="idea-tags">
+    <span class="tag tag-designing">Designing</span>
+    <span class="tag tag-sdg">SDG12</span>
+    <span class="tag tag-sdg">SDG14</span>
+    <span class="tag tag-funding">Funding</span>
+    <span class="tag tag-promotion">Promoting</span>
+  </div>
+  <div class="idea-assistance">We require someone who can design and manufacture reusable straws.</div>
+  <br>
+  <div class="idea-feedback">
+    <span class="feedback-button like-button"><i class="fa fa-thumbs-up"> </i></span>
+    <span class="feedback-button dislike-button"><i class="fa fa-thumbs-down"> </i></span>
+    <span class="feedback-button comment-button" id="idea_4"><i class="fa fa-comment"> </i></span>
+    <span class="feedback-button volunteer-button"><i class="fa fa-handshake-o"> </i></span>
+    <div class="comment-form" style="display: none;" id="reply_4">
+    </div>
+  </div>
+</div>
+<!--New idea-->
+<div class="idea" onclick="window.open('greenenergy.html')">
+  <div class="idea-title">Green Energy</div>
+  <div class="basicdesc">Promoting the use of green energy sources such as solar, wind, and hydropower.</div>
+  <div class="idea-tags">
+    <span class="tag tag-coding">Technology</span>
+    <span class="tag tag-sdg">SDG7</span>
+    <span class="tag tag-sdg">SDG13</span>
+    <span class="tag tag-funding">Funding</span>
+    <span class="tag tag-promotion">Promoting</span>
+  </div>
+  <div class="idea-assistance">We require someone who can provide expertise in green energy technology and funding options.</div>
+  <br>
+  <div class="idea-feedback">
+    <span class="feedback-button like-button"><i class="fa fa-thumbs-up"> </i></span>
+    <span class="feedback-button dislike-button"><i class="fa fa-thumbs-down"> </i></span>
+    <span class="feedback-button comment-button" id="idea_5"><i class="fa fa-comment"> </i></span>
+    <span class="feedback-button volunteer-button"><i class="fa fa-handshake-o"> </i></span>
+    <div class="comment-form" style="display: none;" id="reply_5">
+    </div>
+  </div>
+</div>
+  <style>
+
+    .ads-container {
+      position: fixed;
+      right: 0;
+      width: 300px;
+      height: 600px;
+      background-color: #f2f2f2;
+      border: 10px;
+      border-color: black;
+      border-style: solid;
+      margin-top: 60px;
+      margin-right: 10px;
+    }
+    
+    </style>
+    
+    <div class="ads-container">
+        <img src="https://snipboard.io/liPWUp.jpg" alt="">
+      </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
